@@ -1,0 +1,4 @@
+interface:
+  display_name: "个人网站 · Personal Website"
+  short_description: "参考图驱动的高保真个人网站工作流"
+  default_prompt: "用 $personal-website 帮我规划内容、生成参考图、拆分素材，并高保真复刻我的个人网站。"
