@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# Site Builder Skill
+# Identity Skill
 
 > *「给它参考图，拿回一个 1:1 还原的个人网站。」*
 > *"Hand it the reference images. Get back a personal site that actually matches them."*
@@ -18,7 +18,7 @@
 用 Image 2 把每个分区的设计出成参考图，你确认后再做 1:1 还原。设计这一步交给最强的图片模型，补上 Codex 的短板；写第一行代码前，你已经看过并锁定了设计。
 
 ```
-npx skills add Sac-Y/site-builder-skill
+npx skills add Sac-Y/identity-skill
 ```
 
 主要面向 **Codex**，装好后直接说话即可触发。
@@ -54,7 +54,7 @@ npx skills add Sac-Y/site-builder-skill
 ## 安装与使用
 
 ```bash
-npx skills add Sac-Y/site-builder-skill
+npx skills add Sac-Y/identity-skill
 ```
 
 装好后，在 Codex 里直接描述你的需求即可触发：

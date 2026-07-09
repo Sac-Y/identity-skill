@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# Site Builder Skill
+# Identity Skill
 
 > *"Hand it the reference images. Get back a personal site that actually matches them."*
 
@@ -17,7 +17,7 @@
 Use Image 2 to turn each section into a reference image for you to approve, then rebuild it 1:1. The design step goes to the strongest image model — covering Codex's weak spot — so the design is seen and locked before any code exists.
 
 ```
-npx skills add Sac-Y/site-builder-skill
+npx skills add Sac-Y/identity-skill
 ```
 
 Built mainly for **Codex** — installed, it triggers from a plain sentence.
@@ -53,7 +53,7 @@ Every step has a concrete output, and the first four are separated by **blocking
 ## Install & Use
 
 ```bash
-npx skills add Sac-Y/site-builder-skill
+npx skills add Sac-Y/identity-skill
 ```
 
 Once installed, just describe what you want inside Codex:
