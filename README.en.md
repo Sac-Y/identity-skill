@@ -30,19 +30,19 @@ Built mainly for **Codex** — installed, it triggers from a plain sentence.
 
 ## Demo
 
-Three personal sites built with this skill (real Codex runs):
+Three personal sites built with this skill (real Codex runs). Click a cover to play the HD original (with sound):
 
 **Elon Musk**
 
-<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk.mp4" controls muted></video>
+[![Elon Musk · demo](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk.mp4)
 
 **links**
 
-<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links.mp4" controls muted></video>
+[![links · demo](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links.mp4)
 
 **Sac**
 
-<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac.mp4" controls muted></video>
+[![Sac · demo](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac.mp4)
 
 ---
 

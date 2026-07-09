@@ -31,19 +31,19 @@ npx skills add Sac-Y/identity-skill
 
 ## 案例演示
 
-用这个 skill 做出来的三个个人网站（Codex 实跑）：
+用这个 skill 做出来的三个个人网站（Codex 实跑）。点封面即可播放 HD 原片（含声音）：
 
 **马斯克**
 
-<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk.mp4" controls muted></video>
+[![马斯克 · 案例演示](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk.mp4)
 
 **links**
 
-<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links.mp4" controls muted></video>
+[![links · 案例演示](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links.mp4)
 
 **Sac**
 
-<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac.mp4" controls muted></video>
+[![Sac · 案例演示](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac.mp4)
 
 ---
 
