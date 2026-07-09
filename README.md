@@ -35,18 +35,15 @@ npx skills add Sac-Y/identity-skill
 
 **1 · 马斯克**
 
-<!-- 在 GitHub 网页编辑器里，把 elon-musk-720p.mp4 拖到下面这一行（会自动内嵌播放器），再删掉本提示行 -->
-_👉 把「elon-musk-720p.mp4」拖到这里_
+https://github.com/user-attachments/assets/8396b561-5f30-40a8-92d0-e8655337193c
 
 **2 · links**
 
-<!-- 把 links-720p.mp4 拖到下面这一行，再删掉本提示行 -->
-_👉 把「links-720p.mp4」拖到这里_
+https://github.com/user-attachments/assets/54c89d13-f7a7-4e0c-ba77-5f9b236b2cda
 
 **3 · Sac**
 
-<!-- 把 sac-720p.mp4 拖到下面这一行，再删掉本提示行 -->
-_👉 把「sac-720p.mp4」拖到这里_
+https://github.com/user-attachments/assets/31ccce26-ace5-41e4-909d-12603cce96b6
 
 ---
 
