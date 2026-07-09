@@ -36,11 +36,11 @@ All the sites below were generated with this skill:
 
 https://github.com/user-attachments/assets/8396b561-5f30-40a8-92d0-e8655337193c
 
-**2 · links**
+**2 · links (well-known China-based travel & photography blogger)**
 
 https://github.com/user-attachments/assets/54c89d13-f7a7-4e0c-ba77-5f9b236b2cda
 
-**3 · Sac**
+**3 · Sac (repo author)**
 
 https://github.com/user-attachments/assets/31ccce26-ace5-41e4-909d-12603cce96b6
 
