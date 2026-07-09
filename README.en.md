@@ -22,27 +22,9 @@ npx skills add Sac-Y/identity-skill
 
 Built mainly for **Codex** — installed, it triggers from a plain sentence.
 
-[Demo](#demo) · [Why](#why) · [How it works](#the-five-step-workflow) · [Install](#install--use)
+[Why](#why) · [How it works](#the-five-step-workflow) · [Install](#install--use)
 
 </div>
-
----
-
-## Demo
-
-Three personal sites built with this skill (real Codex runs). Click a cover to play the HD original (with sound):
-
-**Elon Musk**
-
-[![Elon Musk · demo](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk.mp4)
-
-**links**
-
-[![links · demo](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links.mp4)
-
-**Sac**
-
-[![Sac · demo](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac-poster.jpg)](https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac.mp4)
 
 ---
 
