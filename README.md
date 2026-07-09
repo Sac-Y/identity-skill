@@ -23,9 +23,27 @@ npx skills add Sac-Y/identity-skill
 
 主要面向 **Codex**，装好后直接说话即可触发。
 
-[为什么需要它](#为什么需要它) · [怎么工作](#五步工作流) · [安装与使用](#安装与使用)
+[案例演示](#案例演示) · [为什么需要它](#为什么需要它) · [怎么工作](#五步工作流) · [安装与使用](#安装与使用)
 
 </div>
+
+---
+
+## 案例演示
+
+用这个 skill 做出来的三个个人网站（Codex 实跑）：
+
+**马斯克**
+
+<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/elon-musk.mp4" controls muted></video>
+
+**links**
+
+<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/links.mp4" controls muted></video>
+
+**Sac**
+
+<video src="https://github.com/Sac-Y/identity-skill/releases/download/v0.1/sac.mp4" controls muted></video>
 
 ---
 
