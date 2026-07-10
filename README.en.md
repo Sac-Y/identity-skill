@@ -77,7 +77,7 @@ npx skills add Sac-Y/identity-skill
 Once installed, just describe what you want inside Codex:
 
 ```
-"Use personal-website to build me a job-hunting personal site, I have a LinkedIn"
+"Use identity-skill to build me a job-hunting personal site, I have a LinkedIn"
 "Rebuild these reference images into a webpage, 1:1"
 "Make me a portfolio site, be bold with the style, give me a few directions to pick from"
 ```

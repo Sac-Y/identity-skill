@@ -2,7 +2,7 @@
 
 > 本文改编并浓缩自 [Taste Skill](https://github.com/Leonxlnx/taste-skill) 的 `imagegen-frontend-web`（MIT License · © 2026 Leonxlnx），并译为中文。运行时如已安装官方完整版，以官方版为准。
 
-当独立的 `imagegen-frontend-web` skill 不可用，或者 `personal-website` 需要一份自包含的第二步图像方向契约时，使用这份随附的引用文档。
+当独立的 `imagegen-frontend-web` skill 不可用，或者 `identity-skill` 需要一份自包含的第二步图像方向契约时，使用这份随附的引用文档。
 
 ## 硬性输出规则（Hard Output Rule）
 

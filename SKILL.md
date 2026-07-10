@@ -1,5 +1,5 @@
 ---
-name: personal-website
+name: identity-skill
 description: "通过分阶段、参考图驱动的流程打造有辨识度的个人网站：内容与风格锁定、参考图锁定、素材拆分评审、素材生成评审，再到高保真复刻与 QA。当用户想用 Codex、Image 2、参考图、生成素材或高质量 image-to-code 流程制作、改版或复刻个人网站、作品集、创作者站、创始人站或个人 IP 站时使用。Creates distinctive personal websites through a staged reference-driven workflow (content lock, reference-image lock, asset-split review, asset-generation review, faithful rebuild, QA). Use for making, redesigning, or replicating a personal website, portfolio, creator/founder/personal-IP site."
 ---
 
@@ -213,7 +213,7 @@ description: "通过分阶段、参考图驱动的流程打造有辨识度的个
 
 参考图集合确认后，先审视已接受的参考图，再生成素材或写代码。本阶段产出一份面向用户的素材拆分清单，并暂停等待确认。
 
-本阶段的边界与粒度决策由独立的 `reference-asset-splitter` skill 负责。产出拆分清单前，读取 `references/reference-asset-splitter/SKILL.md` 及其 `split-patterns.md`，并遵循它自顶向下的决策流程：先对每个区域的用途分类（静态装饰 static-decor / 内容卡片 content-card / 媒体槽 media-slot / 身份标识 identity），再去枚举可见对象；默认取"能保真的最粗颗粒素材"，只有触发它的强制拆分条件（独立交互、独立替换、可编辑/事实性文字、响应式重排）时才拆得更细；逐页说明交互假设；当"静态 vs 交互"不明确时，给出一个推荐默认方案加一个备选方案。下面的规则只覆盖 personal-website 在其之上额外补充的部分（产物、几何测量、清单、确认关卡）；任何措辞冲突时，以 splitter skill 为准。
+本阶段的边界与粒度决策由独立的 `reference-asset-splitter` skill 负责。产出拆分清单前，读取 `references/reference-asset-splitter/SKILL.md` 及其 `split-patterns.md`，并遵循它自顶向下的决策流程：先对每个区域的用途分类（静态装饰 static-decor / 内容卡片 content-card / 媒体槽 media-slot / 身份标识 identity），再去枚举可见对象；默认取"能保真的最粗颗粒素材"，只有触发它的强制拆分条件（独立交互、独立替换、可编辑/事实性文字、响应式重排）时才拆得更细；逐页说明交互假设；当"静态 vs 交互"不明确时，给出一个推荐默认方案加一个备选方案。下面的规则只覆盖 identity-skill 在其之上额外补充的部分（产物、几何测量、清单、确认关卡）；任何措辞冲突时，以 splitter skill 为准。
 
 目标是实用而非过度指定：告诉用户哪些可见部分应留在代码里、哪些部分需要单独的生成或采集素材、哪些素材应是透明/前景、哪些属于背景、哪些真实素材不能伪造、以及哪些决策一旦猜错会损害最终复刻。
 
@@ -374,7 +374,7 @@ description: "通过分阶段、参考图驱动的流程打造有辨识度的个
 
 ### 视觉 QA
 
-QA 就是 builder 契约的 Verification 工作流，逐区运行：view_image 把每张已接受参考图和渲染出的分区并排看（不是一次性整页过），在可行时以参考图的原生尺寸截图，写保真台账，并把 builder 的硬性停止项——包括占位方框和代码画出来的概念素材替身——当作失败。下面的检查是 personal-website 在该工作流之上的补充，不是替代。
+QA 就是 builder 契约的 Verification 工作流，逐区运行：view_image 把每张已接受参考图和渲染出的分区并排看（不是一次性整页过），在可行时以参考图的原生尺寸截图，写保真台账，并把 builder 的硬性停止项——包括占位方框和代码画出来的概念素材替身——当作失败。下面的检查是 identity-skill 在该工作流之上的补充，不是替代。
 
 需要本地预览 URL 时，优先用 `portless` 配一个项目专属主机名，例如 `personal-site.localhost`，合适时加一个可复用的小脚本或 `portless.json`。只有 portless 不可用或用户要求裸端口时，才用裸 `localhost:<port>`。
 

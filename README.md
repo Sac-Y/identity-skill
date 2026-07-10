@@ -78,7 +78,7 @@ npx skills add Sac-Y/identity-skill
 装好后，在 Codex 里直接描述你的需求即可触发：
 
 ```
-「用 personal-website 帮我做个求职用的个人网站，我有 LinkedIn」
+「用 identity-skill 帮我做个求职用的个人网站，我有 LinkedIn」
 「照着这几张参考图 1:1 还原成网页」
 「帮我做个作品集站，风格大胆一点，给我几个方向选」
 ```
