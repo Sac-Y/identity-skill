@@ -14,7 +14,7 @@
 
 **Reference images first, code second. You review the design before a single line is written.**
 
-Use Image 2 to turn each section into a reference image for you to approve, then rebuild it 1:1. The design step goes to the strongest image model — covering Codex's weak spot — so the design is seen and locked before any code exists.
+Use Image 2 to turn each section into a reference image for you to approve and lock, then rebuild it 1:1. The design step goes to the strongest image model — covering Codex's weak spot — and the final delivery is checked with per-section captures, a fidelity ledger, and deterministic evidence validation.
 
 ```
 npx skills add Sac-Y/identity-skill
@@ -50,7 +50,7 @@ https://github.com/user-attachments/assets/31ccce26-ace5-41e4-909d-12603cce96b6
 
 Ask an agent to build a site and it usually starts coding right away — you can't see the design until it's done, and its taste is unreliable.
 
-This skill flips that: it first turns the design into reference images for you to approve, then rebuilds them faithfully. You lock the design before any code; implementation only has to reproduce it.
+This skill flips that: it first turns the design into reference images for you to approve, then rebuilds them faithfully. You lock the design before any code; before delivery, the skill must also leave section-by-section comparison evidence and pass validation instead of merely claiming completion.
 
 ---
 
@@ -61,10 +61,10 @@ Every step has a concrete output, and the first four are separated by **blocking
 | Step | What it does | Output | Gate |
 |------|--------------|--------|------|
 | **1 · Content & style lock** | Reads your resume / LinkedIn / project links, decides the site shape and sections, proposes up to 3 **visually concrete** style directions | Content & site-shape doc + style options | ✅ Confirm content & style |
-| **2 · Reference-image lock** | One horizontal reference image per section, plus a consistency + monotony audit (incl. the "grey-block test") | Section reference set | ✅ Accept references |
+| **2 · Reference-image lock** | Creates one horizontal reference per section, locks the source strategy for real people and products, and audits visual quality and buildability; approval creates an immutable version with SHA-256 hashes | Section references + render contracts + hash lock | ✅ Accept references |
 | **3 · Asset split list** | Decomposes each reference: what stays code, what needs a background image, what needs a foreground asset — and **measures each asset's geometry** (bounding box, aspect ratio, width %) | Reference→build map + asset manifest | ✅ Confirm the split |
 | **4 · Asset generation review** | Generates only approved assets, each **anchored to its reference region**, then inspects them one by one | Finished assets + restoration brief | ✅ Accept assets |
-| **5 · Faithful rebuild & QA** | Hands off to the builder contract for a 1:1 build, compares each section to its reference, and **reconciles geometry with DOM numbers** | Website + fidelity ledger | — |
+| **5 · Faithful rebuild & QA** | Hands off to the builder contract for a 1:1 build, compares every section at desktop, ultrawide, and mobile sizes, completes a fresh-context review, and runs deterministic validation | Website + fidelity ledger + complete evidence | — |
 
 ---
 
@@ -84,12 +84,23 @@ Once installed, just describe what you want inside Codex:
 
 It starts from step one and pauses at each confirmation gate for your call.
 
+### Completion Validation
+
+Before Step Five can be delivered, the skill runs the bundled validator:
+
+```bash
+python3 /path/to/identity-skill/scripts/verify_identity_run.py /path/to/site-project
+```
+
+The validator checks immutable reference hashes, desktop/ultrawide/mobile captures for every section, capture dimensions, fidelity statuses, the fresh review, and required ledgers. Exit code `0` proves evidence completeness; final visual quality still requires image-by-image review.
+
 ### Dependencies & Compatibility
 
 - **Image generation**: prefers the installed `imagegen-frontend-web`; otherwise reads the bundled adaptation, or writes prompts for you to paste into GPT web Image 2.
-- **Frontend build**: prefers the installed Build Web Apps `frontend-app-builder`; otherwise uses the bundled Chinese translation.
+- **Frontend build**: prefers the installed Build Web Apps `frontend-app-builder`; otherwise uses the bundled version.
 - **Asset splitting**: bundled `reference-asset-splitter`, no separate install.
-- All three companion references ship with the skill — **installing this one is enough**.
+- **Quality & evidence**: bundled visual-quality gate, evidence gate, and `verify_identity_run.py` validator.
+- All companion references, examples, and validation scripts ship with the skill — **installing this one is enough**.
 
 ---
 
@@ -98,7 +109,7 @@ It starts from step one and pauses at each confirmation gate for your call.
 Still iterating. Coming up:
 
 - **Beyond Codex**: usage examples for other agents, and image generation via APIs beyond Image 2.
-- **Motion**: give generated sites the interactions and animation you want.
+- **Advanced motion**: expand support for more complex interactions, transitions, and motion review.
 - **More styles**: refine the design taste, add preset templates in a range of styles.
 - **Flow polish**: keep refining the overall design flow.
 
